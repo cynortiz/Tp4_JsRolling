@@ -36,6 +36,7 @@ miRectangulo.setAlto(8);
 miRectangulo.setAncho(12);
 miRectangulo.mostrarPropiedades();
 
-// Calcular y mostrar perímetro y área
+
 console.log(`Perímetro: ${miRectangulo.calcularPerimetro()}`);
 console.log(`Área: ${miRectangulo.calcularArea()}`);
+

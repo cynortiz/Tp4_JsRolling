@@ -1,41 +1,22 @@
-class Rectangulo {
-    constructor(alto, ancho) {
-        this.alto = alto;
-        this.ancho = ancho;
+class Producto {
+    constructor(codigo, nombre, precio) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.precio = precio;
     }
 
-    
-    setAlto(nuevoAlto) {
-        this.alto = nuevoAlto;
-    }
-
-    setAncho(nuevoAncho) {
-        this.ancho = nuevoAncho;
-    }
-
-    mostrarPropiedades() {
-        console.log(`Rectángulo: Alto = ${this.alto}, Ancho = ${this.ancho}`);
-    }
-
-
-    calcularPerimetro() {
-        return 2 * (this.alto + this.ancho);
-    }
-
-    calcularArea() {
-        return this.alto * this.ancho;
+    imprimeDatos() {
+        console.log(`Código: ${this.codigo}, Nombre: ${this.nombre}, Precio: ${this.precio}`);
     }
 }
 
+const producto1 = new Producto("001", "Producto A", 20.99);
+const producto2 = new Producto("002", "Producto B", 15.50);
+const producto3 = new Producto("003", "Producto C", 30.75);
 
-const miRectangulo = new Rectangulo(5, 10);
+
+const arrayProductos = [producto1, producto2, producto3];
 
 
-miRectangulo.mostrarPropiedades();
-miRectangulo.setAlto(8);
-miRectangulo.setAncho(12);
-miRectangulo.mostrarPropiedades();
+arrayProductos.forEach(producto => producto.imprimeDatos());
 
-// Calcular y mostrar perímetro y área
-console.log(`Perímetro: ${miRectangulo.calcularPerimetro()}`);
-console.log(`Área: ${miRectangulo.calcularArea()}`);
