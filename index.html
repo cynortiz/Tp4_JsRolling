@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Cynthia Ortiz"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Practico4- JS</title>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
 </head>
+<header>
+    <h1>Practica de DOM</h1>
+    <p>Manipular elementos HTML desde JavaScript</p>
+  </header>  
 <body>
-    <script src="/ejercicio2.js"></script>
+    <body>
+        <section id="practica-dom">
+          <h2>DOM</h2>
+          <p>El DOM (Document Object Model) en JavaScript es una representación estructurada y jerárquica de un documento HTML que permite a los programas
+            acceder, manipular y modificar el contenido, la estructura y el estilo de una página web. Básicamente, el DOM es una interfaz que conecta el contenido de la
+            página web con los scripts o programas en JavaScript, permitiendo interactuar con elementos HTML como etiquetas, atributos, estilos y eventos.</p>
+        </section>
+        <br>
+        <button type="button" class="btn btn-primary">cambiar titulo</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="manipulacion-elementos">
+          <h2>Manipular elementos HTML desde JavaScript</h2>
+          <p>Trabajar con el DOM (Document Object Model) implica interactuar con la estructura de una página web mediante JavaScript. El DOM organiza la página como
+            una estructura de árbol donde cada elemento HTML es representado como un objeto que puede ser accedido, modificado o eliminado. Para trabajar con el
+            DOM, puedes seleccionar elementos mediante métodos como getElementByld, querySelector, getElementsByClassName, entre otros. Una vez seleccionados,
+            puedes cambiar su contenido, estilo, atributos o incluso crear nuevos elementos. La modificación del DOM ocurre a través de métodos y propiedades como
+            innerHTML, setAttribute, style, appendChild, entre otros.</p>
+        </section>
+        
+    
+<button type="button" class="btn btn-link">Ver más...</button>
+    <script src="/ejercicio3.js"></script>
 </body>
 </html>
